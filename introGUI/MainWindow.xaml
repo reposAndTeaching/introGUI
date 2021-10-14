@@ -1,0 +1,21 @@
+﻿<Window x:Class="introGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:introGUI"
+        mc:Ignorable="d"
+        Title="Nueva GUI 2" Height="320" Width="480" Background="Chocolate">
+    <Grid>
+        <Label x:Name="labelNombre" Content="Nombre: " HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNombre" HorizontalAlignment="Left" Height="23" Margin="97,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelAnio" Content="Año: " HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxAnio" HorizontalAlignment="Left" Height="23" Margin="97,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelRecomendada" Content="Recomienda: " HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.52,2.664"/>
+        <CheckBox x:Name="checkBoxRecomienda" HorizontalAlignment="Left" Margin="97,121,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonRegistrar" Content="Registrar!" HorizontalAlignment="Left" Margin="17,167,0,0" VerticalAlignment="Top" Width="200" Click="buttonRegistrar_Click"/>
+        <Border BorderBrush="Cyan" BorderThickness="1" HorizontalAlignment="Left" Height="269" Margin="237,10,0,0" VerticalAlignment="Top" Width="225">
+            <Label x:Name="labelLista"/>
+        </Border>
+    </Grid>
+</Window>
